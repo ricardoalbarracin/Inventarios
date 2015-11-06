@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventariosImportaciones", "InventariosImportaciones\InventariosImportaciones.csproj", "{BEA9D774-FB4C-4280-B54C-877D2539CFA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryLog", "..\ClassLibraryLog\ClassLibraryLog\ClassLibraryLog.csproj", "{C91C4695-047F-47FA-8AB9-BDA3E536D7EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryLanguage", "..\ClassLibraryLanguage\ClassLibraryLanguage.csproj", "{74DDB914-4AC9-4842-A800-91F734D88F87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNet.Identity.MySQL", "..\AspNet.Identity.MySQL\AspNet.Identity.MySQL.csproj", "{26F6ECF9-4369-417B-8CF2-54FA92DF3660}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Seguridad", "Seguridad", "{B4AAF6A4-1A4C-4F2F-89F8-40B68C8F7821}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Herramientas y globalizacion", "Herramientas y globalizacion", "{FFB7ABBE-13DF-4F3C-A8B2-7BAF93714722}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Security", "..\App.Security\App.Security.csproj", "{C67BADCF-C58F-45E6-AF42-2B1948A76A8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEA9D774-FB4C-4280-B54C-877D2539CFA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEA9D774-FB4C-4280-B54C-877D2539CFA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEA9D774-FB4C-4280-B54C-877D2539CFA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEA9D774-FB4C-4280-B54C-877D2539CFA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C91C4695-047F-47FA-8AB9-BDA3E536D7EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C91C4695-047F-47FA-8AB9-BDA3E536D7EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C91C4695-047F-47FA-8AB9-BDA3E536D7EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C91C4695-047F-47FA-8AB9-BDA3E536D7EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74DDB914-4AC9-4842-A800-91F734D88F87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74DDB914-4AC9-4842-A800-91F734D88F87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74DDB914-4AC9-4842-A800-91F734D88F87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74DDB914-4AC9-4842-A800-91F734D88F87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26F6ECF9-4369-417B-8CF2-54FA92DF3660}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26F6ECF9-4369-417B-8CF2-54FA92DF3660}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26F6ECF9-4369-417B-8CF2-54FA92DF3660}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26F6ECF9-4369-417B-8CF2-54FA92DF3660}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C67BADCF-C58F-45E6-AF42-2B1948A76A8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C67BADCF-C58F-45E6-AF42-2B1948A76A8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C67BADCF-C58F-45E6-AF42-2B1948A76A8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C67BADCF-C58F-45E6-AF42-2B1948A76A8F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C91C4695-047F-47FA-8AB9-BDA3E536D7EB} = {FFB7ABBE-13DF-4F3C-A8B2-7BAF93714722}
+		{74DDB914-4AC9-4842-A800-91F734D88F87} = {FFB7ABBE-13DF-4F3C-A8B2-7BAF93714722}
+		{26F6ECF9-4369-417B-8CF2-54FA92DF3660} = {B4AAF6A4-1A4C-4F2F-89F8-40B68C8F7821}
+		{C67BADCF-C58F-45E6-AF42-2B1948A76A8F} = {B4AAF6A4-1A4C-4F2F-89F8-40B68C8F7821}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://ricardoa88.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = InventariosImportaciones\\InventariosImportaciones.csproj
+		SccProjectName1 = InventariosImportaciones
+		SccLocalPath1 = InventariosImportaciones
+		SccProjectUniqueName2 = ..\\ClassLibraryLog\\ClassLibraryLog\\ClassLibraryLog.csproj
+		SccProjectTopLevelParentUniqueName2 = InventariosImportaciones.sln
+		SccProjectName2 = ../ClassLibraryLog/ClassLibraryLog
+		SccLocalPath2 = ..\\ClassLibraryLog\\ClassLibraryLog
+		SccProjectUniqueName3 = ..\\ClassLibraryLanguage\\ClassLibraryLanguage.csproj
+		SccProjectTopLevelParentUniqueName3 = InventariosImportaciones.sln
+		SccProjectName3 = ../ClassLibraryLanguage
+		SccLocalPath3 = ..\\ClassLibraryLanguage
+		SccProjectUniqueName4 = ..\\AspNet.Identity.MySQL\\AspNet.Identity.MySQL.csproj
+		SccProjectTopLevelParentUniqueName4 = InventariosImportaciones.sln
+		SccProjectName4 = ../AspNet.Identity.MySQL
+		SccLocalPath4 = ..\\AspNet.Identity.MySQL
+		SccProjectUniqueName5 = ..\\App.Security\\App.Security.csproj
+		SccProjectTopLevelParentUniqueName5 = InventariosImportaciones.sln
+		SccProjectName5 = ../App.Security
+		SccLocalPath5 = ..\\App.Security
+	EndGlobalSection
+EndGlobal

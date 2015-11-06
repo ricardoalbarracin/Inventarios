@@ -1,0 +1,780 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AcercaDe" xml:space="preserve">
+    <value>About what</value>
+  </data>
+  <data name="AdministrarCuenta" xml:space="preserve">
+    <value>Manage Your Account.</value>
+  </data>
+  <data name="CambiarContraseña" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="CampoObligatorio" xml:space="preserve">
+    <value>This Field is Required</value>
+  </data>
+  <data name="CerrarSesion" xml:space="preserve">
+    <value>Sign off</value>
+  </data>
+  <data name="ConfirmarContraseña" xml:space="preserve">
+    <value>Confirm new password</value>
+  </data>
+  <data name="ConsoleConfig" xml:space="preserve">
+    <value>Configuration Console</value>
+  </data>
+  <data name="Contacto" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="Contraseña" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="ContraseñaActual" xml:space="preserve">
+    <value>Current Password.</value>
+  </data>
+  <data name="ContraseñaObligatoria" xml:space="preserve">
+    <value>Password is Required.</value>
+  </data>
+  <data name="FormularioCambiarContraseña" xml:space="preserve">
+    <value>Form To Change Password.</value>
+  </data>
+  <data name="Hola" xml:space="preserve">
+    <value>Hi there</value>
+  </data>
+  <data name="HolaMundo" xml:space="preserve">
+    <value>Hello World.</value>
+  </data>
+  <data name="Idioma" xml:space="preserve">
+    <value>Language.</value>
+  </data>
+  <data name="IdPer" xml:space="preserve">
+    <value>IdPeriferico</value>
+  </data>
+  <data name="IniciadoSesiónComo" xml:space="preserve">
+    <value>Logged in as.</value>
+  </data>
+  <data name="IniciarSecion" xml:space="preserve">
+    <value>Log Secion.</value>
+  </data>
+  <data name="Inicio" xml:space="preserve">
+    <value>Home.</value>
+  </data>
+  <data name="Nombre" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NombreUsuario" xml:space="preserve">
+    <value>Username.</value>
+  </data>
+  <data name="NuevaContraseña" xml:space="preserve">
+    <value>New Password.</value>
+  </data>
+  <data name="RecordarCuenta" xml:space="preserve">
+    <value>Forgot Account?</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="UsuarioObligatorio" xml:space="preserve">
+    <value>The User Is Required</value>
+  </data>
+  <data name="UtiliceCuentaLocal" xml:space="preserve">
+    <value>Use a local account to log on</value>
+  </data>
+  <data name="Activo" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="Configuracion" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="IDServer" xml:space="preserve">
+    <value>Server</value>
+  </data>
+  <data name="IdTipoPer" xml:space="preserve">
+    <value>De Peripheral Type</value>
+  </data>
+  <data name="IdZona" xml:space="preserve">
+    <value>Area</value>
+  </data>
+  <data name="Perifericos" xml:space="preserve">
+    <value>Perifericos</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="ConfigPeriferico" xml:space="preserve">
+    <value>Configuration of computer peripherals</value>
+  </data>
+  <data name="IP" xml:space="preserve">
+    <value>IP</value>
+  </data>
+  <data name="NoEncontrado" xml:space="preserve">
+    <value>Literal Found In</value>
+  </data>
+  <data name="Camaras" xml:space="preserve">
+    <value>Cameras</value>
+  </data>
+  <data name="Clave" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="ConfigCamaras" xml:space="preserve">
+    <value>Configuration Camera</value>
+  </data>
+  <data name="IdCamara" xml:space="preserve">
+    <value>IDCamara</value>
+  </data>
+  <data name="IDModelo" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="PuertoConfig" xml:space="preserve">
+    <value>Port Configuration</value>
+  </data>
+  <data name="PuertoStream" xml:space="preserve">
+    <value>Stream Port</value>
+  </data>
+  <data name="Url" xml:space="preserve">
+    <value>Url</value>
+  </data>
+  <data name="Usuario" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="Canal" xml:space="preserve">
+    <value>Canal</value>
+  </data>
+  <data name="ConfigServidores" xml:space="preserve">
+    <value>Configuration</value>
+  </data>
+  <data name="Servidores" xml:space="preserve">
+    <value>Servers</value>
+  </data>
+  <data name="ConfigZonas" xml:space="preserve">
+    <value>ConfigZonas</value>
+  </data>
+  <data name="IdServidor" xml:space="preserve">
+    <value>IdServidor</value>
+  </data>
+  <data name="Zonas" xml:space="preserve">
+    <value>Areas</value>
+  </data>
+  <data name="Descripcion" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="IsMoto" xml:space="preserve">
+    <value>Motorcycle console</value>
+  </data>
+  <data name="IsVirtual" xml:space="preserve">
+    <value>Virtual Console</value>
+  </data>
+  <data name="OnlyVIP" xml:space="preserve">
+    <value>VIP only</value>
+  </data>
+  <data name="VerificarPlaca" xml:space="preserve">
+    <value>Check Plate</value>
+  </data>
+  <data name="IdConsola" xml:space="preserve">
+    <value>IdConsola</value>
+  </data>
+  <data name="NombrePer" xml:space="preserve">
+    <value>Peripheral</value>
+  </data>
+  <data name="Tipo" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="IdPerCam" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="Parqueadero" xml:space="preserve">
+    <value>Parking</value>
+  </data>
+  <data name="Mensajes" xml:space="preserve">
+    <value>Posts</value>
+  </data>
+  <data name="TipoDeAcceso" xml:space="preserve">
+    <value>TipoDeAcceso</value>
+  </data>
+  <data name="Usuarios" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="Apellido" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="Direccion" xml:space="preserve">
+    <value>Street address</value>
+  </data>
+  <data name="Eliminado" xml:space="preserve">
+    <value>Removed</value>
+  </data>
+  <data name="IdGroup" xml:space="preserve">
+    <value>Id Grupo</value>
+  </data>
+  <data name="IdMensaje" xml:space="preserve">
+    <value>Id Message</value>
+  </data>
+  <data name="IdTipoZona" xml:space="preserve">
+    <value>Zone Type</value>
+  </data>
+  <data name="Mensaje" xml:space="preserve">
+    <value>Post</value>
+  </data>
+  <data name="Telefono" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="Cantidad" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="CarrosxDia" xml:space="preserve">
+    <value>Report Of Cars Per Day</value>
+  </data>
+  <data name="CarrosxDiaxHora" xml:space="preserve">
+    <value>Dealers Report By Date and Time</value>
+  </data>
+  <data name="Consola" xml:space="preserve">
+    <value>Console</value>
+  </data>
+  <data name="DuracionCarros" xml:space="preserve">
+    <value>Report on parking duration</value>
+  </data>
+  <data name="Fecha" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="OcuapacionxDiaxHora" xml:space="preserve">
+    <value>Report From Ocuapacion By Date and Time</value>
+  </data>
+  <data name="Reportes" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="Agregar" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="Carros" xml:space="preserve">
+    <value>Cars</value>
+  </data>
+  <data name="Chart" xml:space="preserve">
+    <value>Chart</value>
+  </data>
+  <data name="Consolas" xml:space="preserve">
+    <value>Consoles</value>
+  </data>
+  <data name="Entrada" xml:space="preserve">
+    <value>Entrance</value>
+  </data>
+  <data name="Final" xml:space="preserve">
+    <value>Final</value>
+  </data>
+  <data name="Inicial" xml:space="preserve">
+    <value>Initial</value>
+  </data>
+  <data name="Mensual" xml:space="preserve">
+    <value>Monthly</value>
+  </data>
+  <data name="Motos" xml:space="preserve">
+    <value>Motorcycles</value>
+  </data>
+  <data name="Normal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="Rango" xml:space="preserve">
+    <value>Range</value>
+  </data>
+  <data name="Reportede" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="Salida" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="Tabla" xml:space="preserve">
+    <value>Table</value>
+  </data>
+  <data name="TipoUsuario" xml:space="preserve">
+    <value>Type of User</value>
+  </data>
+  <data name="TipoVehiculo" xml:space="preserve">
+    <value>Vehicle Type</value>
+  </data>
+  <data name="Todos" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="UsuariosMensual" xml:space="preserve">
+    <value>Type Monthly Users</value>
+  </data>
+  <data name="UsuariosNormal" xml:space="preserve">
+    <value>Users type Normal</value>
+  </data>
+  <data name="UsuariosVIP" xml:space="preserve">
+    <value>Users type VIP</value>
+  </data>
+  <data name="y" xml:space="preserve">
+    <value>and</value>
+  </data>
+  <data name="Hora" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="Duracion" xml:space="preserve">
+    <value>Duration</value>
+  </data>
+  <data name="Zona" xml:space="preserve">
+    <value>Area</value>
+  </data>
+  <data name="Estado" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="EstadoDeTarjetasXDia" xml:space="preserve">
+    <value>In State Report Card Per Day</value>
+  </data>
+  <data name="ReportesParqueadero" xml:space="preserve">
+    <value>Parking Reports</value>
+  </data>
+  <data name="ReportesFacturacion" xml:space="preserve">
+    <value>Billing reports</value>
+  </data>
+  <data name="BaseAutomáticos" xml:space="preserve">
+    <value>Automatic Base</value>
+  </data>
+  <data name="Cajero" xml:space="preserve">
+    <value>Cash</value>
+  </data>
+  <data name="Diferencia" xml:space="preserve">
+    <value>Difference</value>
+  </data>
+  <data name="Facturado" xml:space="preserve">
+    <value>I checked</value>
+  </data>
+  <data name="IVA" xml:space="preserve">
+    <value>VAT</value>
+  </data>
+  <data name="Observaciones" xml:space="preserve">
+    <value>Remarks:</value>
+  </data>
+  <data name="PreCierres" xml:space="preserve">
+    <value>PreCierres</value>
+  </data>
+  <data name="Producido" xml:space="preserve">
+    <value>Produced</value>
+  </data>
+  <data name="Recargas" xml:space="preserve">
+    <value>Reloads</value>
+  </data>
+  <data name="ReporteDiario" xml:space="preserve">
+    <value>Daily Report Control</value>
+  </data>
+  <data name="SaldoStack" xml:space="preserve">
+    <value>Saldo Stack</value>
+  </data>
+  <data name="Stack" xml:space="preserve">
+    <value>Stack</value>
+  </data>
+  <data name="Terminal" xml:space="preserve">
+    <value>Terminal</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="TotalEfectivoCofre" xml:space="preserve">
+    <value>Total Effective Lockers:</value>
+  </data>
+  <data name="TotalEfectivoParqueadero" xml:space="preserve">
+    <value>TotalEfectivo parking:</value>
+  </data>
+  <data name="TotalSinIVA" xml:space="preserve">
+    <value>Total Sin IVA</value>
+  </data>
+  <data name="Turno" xml:space="preserve">
+    <value>Turn</value>
+  </data>
+  <data name="ValorReportado" xml:space="preserve">
+    <value>Reported Value</value>
+  </data>
+  <data name="FacturadoDesde" xml:space="preserve">
+    <value>Billed From</value>
+  </data>
+  <data name="Hasta" xml:space="preserve">
+    <value>Up</value>
+  </data>
+  <data name="NIT" xml:space="preserve">
+    <value>NIT</value>
+  </data>
+  <data name="ReporteDiarioFacturacion" xml:space="preserve">
+    <value>Daily Report billing</value>
+  </data>
+  <data name="Convenio" xml:space="preserve">
+    <value>Convention</value>
+  </data>
+  <data name="ReporteDiarioDian" xml:space="preserve">
+    <value>Report billing DIAN</value>
+  </data>
+  <data name="ReporteDiarioDianxFactura" xml:space="preserve">
+    <value>Report billing DIAN For Billing</value>
+  </data>
+  <data name="ReporteFacturacionxZonas" xml:space="preserve">
+    <value>Report billing by region</value>
+  </data>
+  <data name="TotalIVA" xml:space="preserve">
+    <value>Total IVA</value>
+  </data>
+  <data name="ValorFactura" xml:space="preserve">
+    <value>Invoice Value</value>
+  </data>
+  <data name="ReporteConveniosAplicados" xml:space="preserve">
+    <value>Report Conventions Applied</value>
+  </data>
+  <data name="Placa" xml:space="preserve">
+    <value>Plate</value>
+  </data>
+  <data name="Tarifa" xml:space="preserve">
+    <value>Rate</value>
+  </data>
+  <data name="Tarjeta" xml:space="preserve">
+    <value>Card</value>
+  </data>
+  <data name="TotalConvenios" xml:space="preserve">
+    <value>Total Convenios</value>
+  </data>
+  <data name="TotalMinutos" xml:space="preserve">
+    <value>Total minutos</value>
+  </data>
+  <data name="ReporteConveniosUtilizados" xml:space="preserve">
+    <value>Report From Conventions Used</value>
+  </data>
+  <data name="AjusteTarifa" xml:space="preserve">
+    <value>Rate Adjustment</value>
+  </data>
+  <data name="Anulada" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+  <data name="CajeroOpen" xml:space="preserve">
+    <value>Cajero Open</value>
+  </data>
+  <data name="Factura" xml:space="preserve">
+    <value>Invoice</value>
+  </data>
+  <data name="Faltantes" xml:space="preserve">
+    <value>Missing</value>
+  </data>
+  <data name="FechaEntrada" xml:space="preserve">
+    <value>FechaEntrada</value>
+  </data>
+  <data name="FechaFinal" xml:space="preserve">
+    <value>Fecha Final</value>
+  </data>
+  <data name="FechaInicial" xml:space="preserve">
+    <value>Initial Date</value>
+  </data>
+  <data name="FechaPago" xml:space="preserve">
+    <value>FechaPago</value>
+  </data>
+  <data name="FechaSalida" xml:space="preserve">
+    <value>FechaSalida</value>
+  </data>
+  <data name="Manual" xml:space="preserve">
+    <value>Manual</value>
+  </data>
+  <data name="Minutos" xml:space="preserve">
+    <value>Minutes</value>
+  </data>
+  <data name="MontoFinal" xml:space="preserve">
+    <value>Monto Final</value>
+  </data>
+  <data name="MontoInicial" xml:space="preserve">
+    <value>Initial Amount</value>
+  </data>
+  <data name="NumeroConvenios" xml:space="preserve">
+    <value>Number Convenios</value>
+  </data>
+  <data name="Numtiquetes" xml:space="preserve">
+    <value>No. Tickets</value>
+  </data>
+  <data name="PreCierre" xml:space="preserve">
+    <value>OUTLOOK</value>
+  </data>
+  <data name="Sobrantes" xml:space="preserve">
+    <value>Leftovers</value>
+  </data>
+  <data name="TarjetasCobradas" xml:space="preserve">
+    <value>Collected Cards</value>
+  </data>
+  <data name="TarjetasNoCobradas" xml:space="preserve">
+    <value>Cards Not Collected</value>
+  </data>
+  <data name="TarjetasProcesadas" xml:space="preserve">
+    <value>Processed Cards</value>
+  </data>
+  <data name="TipoConvenio" xml:space="preserve">
+    <value>TipoConvenio</value>
+  </data>
+  <data name="TotalAnuladas" xml:space="preserve">
+    <value>Total Anuladas</value>
+  </data>
+  <data name="TotalCortes" xml:space="preserve">
+    <value>Total Cortes</value>
+  </data>
+  <data name="TotalEfectivo" xml:space="preserve">
+    <value>Total Cash</value>
+  </data>
+  <data name="TotalTurno" xml:space="preserve">
+    <value>Total Turno</value>
+  </data>
+  <data name="TurnoNocturno" xml:space="preserve">
+    <value>Night Shift</value>
+  </data>
+  <data name="Vaciados" xml:space="preserve">
+    <value>Shells</value>
+  </data>
+  <data name="ValorFallos" xml:space="preserve">
+    <value>Fault Value</value>
+  </data>
+  <data name="FechaFactura" xml:space="preserve">
+    <value>FechaFactura</value>
+  </data>
+  <data name="MinutosConvenio" xml:space="preserve">
+    <value>Convention Minutes</value>
+  </data>
+  <data name="MinutosFactura" xml:space="preserve">
+    <value>Minutes Invoice</value>
+  </data>
+  <data name="PorcentajeConvenio" xml:space="preserve">
+    <value>Percentage Convention</value>
+  </data>
+  <data name="ValorConvenio" xml:space="preserve">
+    <value>Value Convention</value>
+  </data>
+  <data name="ReporteFacturacionTransaccionesxPP" xml:space="preserve">
+    <value>Reports Of For PayPoint transactions</value>
+  </data>
+  <data name="Atascos" xml:space="preserve">
+    <value>Jams</value>
+  </data>
+  <data name="Promedio" xml:space="preserve">
+    <value>Average</value>
+  </data>
+  <data name="BilletesEncontrados" xml:space="preserve">
+    <value>Found Tickets</value>
+  </data>
+  <data name="EstadoBillete" xml:space="preserve">
+    <value>State Billet</value>
+  </data>
+  <data name="MomentoFallo" xml:space="preserve">
+    <value>Time of Failure</value>
+  </data>
+  <data name="ReportadoPor" xml:space="preserve">
+    <value>Reported By</value>
+  </data>
+  <data name="BilletesStackPPA" xml:space="preserve">
+    <value>A cheap ticket Stack the PPA</value>
+  </data>
+  <data name="ConveniosAplicados" xml:space="preserve">
+    <value>Conventions Applied</value>
+  </data>
+  <data name="Facturacion" xml:space="preserve">
+    <value>Billing</value>
+  </data>
+  <data name="ListadoCortesPagosFallos" xml:space="preserve">
+    <value>Listing Cortes and / or failures PPA payments</value>
+  </data>
+  <data name="ListadoFallospagarPPA" xml:space="preserve">
+    <value>Listing flaws al pay PPA</value>
+  </data>
+  <data name="ListadoPasesDia" xml:space="preserve">
+    <value>List Passing Day</value>
+  </data>
+  <data name="ListadoPreCierres" xml:space="preserve">
+    <value>Pre List Closings PPA</value>
+  </data>
+  <data name="ListadorecargasPPA" xml:space="preserve">
+    <value>Listing refills PPA</value>
+  </data>
+  <data name="ListadoRegistroIncidentesPPA" xml:space="preserve">
+    <value>List Incident Register PPA</value>
+  </data>
+  <data name="ReporteConsumosMensualesVIP" xml:space="preserve">
+    <value>VIP parking Monthly Consumption Report</value>
+  </data>
+  <data name="ReporteConsumosVIPMes" xml:space="preserve">
+    <value>Report of Consumption Per month VIPs</value>
+  </data>
+  <data name="ReporteTransaccionesVsFallosPPA" xml:space="preserve">
+    <value>Report Faults vs PPP Transactions</value>
+  </data>
+  <data name="ReporteTurnosPPADifs" xml:space="preserve">
+    <value>Produced report missing x vs Point Payment</value>
+  </data>
+  <data name="Turnos" xml:space="preserve">
+    <value>Shifts</value>
+  </data>
+  <data name="Visualizadores" xml:space="preserve">
+    <value>Viewers</value>
+  </data>
+  <data name="TPS" xml:space="preserve">
+    <value>TPS</value>
+  </data>
+  <data name="TVQ" xml:space="preserve">
+    <value>QST</value>
+  </data>
+  <data name="Base" xml:space="preserve">
+    <value>Base</value>
+  </data>
+  <data name="cantTC" xml:space="preserve">
+    <value># Credit Cards</value>
+  </data>
+  <data name="Concepto" xml:space="preserve">
+    <value>Concept</value>
+  </data>
+  <data name="EfectivoTurno" xml:space="preserve">
+    <value>Cash Turn</value>
+  </data>
+  <data name="Numero" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="PorcentajeIVA" xml:space="preserve">
+    <value>Total IVA</value>
+  </data>
+  <data name="Prefijo" xml:space="preserve">
+    <value>Prefix</value>
+  </data>
+  <data name="TipoCobroStr" xml:space="preserve">
+    <value>Payment</value>
+  </data>
+  <data name="TotalFactura" xml:space="preserve">
+    <value>Total Factura</value>
+  </data>
+  <data name="TotalImpuestos" xml:space="preserve">
+    <value>Total Tax</value>
+  </data>
+  <data name="TotalSinImpuesstos" xml:space="preserve">
+    <value>Total Sin Impuesstos</value>
+  </data>
+  <data name="ValorTC" xml:space="preserve">
+    <value>Valor TC</value>
+  </data>
+  <data name="Bienvenido" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="PaginaTitulo" xml:space="preserve">
+    <value>Information System Ultrapark</value>
+  </data>
+  <data name="Temas" xml:space="preserve">
+    <value>Topics</value>
+  </data>
+  <data name="Eventos" xml:space="preserve">
+    <value>Events</value>
+  </data>
+  <data name="InicieSesion" xml:space="preserve">
+    <value>Enter your username and password.</value>
+  </data>
+</root>

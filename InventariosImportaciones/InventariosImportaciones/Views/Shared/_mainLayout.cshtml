@@ -1,0 +1,32 @@
+
+<script>
+    function CancelGridEdit(e) {
+        var aux = e.name + ".CancelEdit()";
+        eval(aux);
+    }
+    function UpdateGridEdit(e) {
+        var aux = e.name + ".UpdateEdit()";
+        eval(aux);
+    }
+</script>
+@{ Layout = "~/Views/Shared/_rootLayout.cshtml"; }
+
+@if(@User.Identity.IsAuthenticated)
+{
+    <body>
+        <div id="wrapper">
+            @Html.Partial("HeaderPartialView")
+            @Html.Partial("ContentLeftPartialView")
+            @RenderBody()
+        </div>
+        
+
+    </body>
+}
+else
+{
+       @RenderBody()
+}
+
+
+        

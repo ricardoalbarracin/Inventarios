@@ -1,0 +1,21 @@
+﻿@using App.Security;
+
+@{
+    ViewBag.Title =  @Resourses.Global.Roles;
+}
+<div class="pageWrap">
+    <div class="pageContent extended">
+        <div class="container">
+            <h2>@ViewBag.Title</h2>
+            @using (Html.BeginForm())
+            {
+                if (User.HasPermission("PB"))
+                {
+                    @Html.Action("RolesGridView")
+
+                }
+            }
+        </div>
+    </div>
+</div>
+

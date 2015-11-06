@@ -1,0 +1,14 @@
+C:\Visual .net\ControlesRepo\Herramientas\ClassLibraryLog\ClassLibraryLog\bin\Debug\log4net.dll
+C:\Visual .net\ControlesRepo\Herramientas\ClassLibraryLog\ClassLibraryLog\bin\Debug\log4net.xml
+C:\Visual .net\ControlesRepo\Herramientas\ClassLibraryLog\ClassLibraryLog\bin\Debug\ClassLibraryLog.dll
+C:\Visual .net\ControlesRepo\Herramientas\ClassLibraryLog\ClassLibraryLog\bin\Debug\ClassLibraryLog.pdb
+C:\Visual .net\ControlesRepo\Herramientas\ClassLibraryLog\ClassLibraryLog\obj\Debug\ClassLibraryLog.dll
+C:\Visual .net\ControlesRepo\Herramientas\ClassLibraryLog\ClassLibraryLog\obj\Debug\ClassLibraryLog.pdb
+C:\Visual .net\ControlesRepo\Herramientas\ClassLibraryLog\ClassLibraryLog\obj\Debug\ClassLibraryLog.csprojResolveAssemblyReference.cache
+C:\Visual .net\ClassLibraryLog\ClassLibraryLog\bin\Debug\log4net.dll
+C:\Visual .net\ClassLibraryLog\ClassLibraryLog\bin\Debug\log4net.xml
+C:\Visual .net\ClassLibraryLog\ClassLibraryLog\bin\Debug\ClassLibraryLog.dll
+C:\Visual .net\ClassLibraryLog\ClassLibraryLog\bin\Debug\ClassLibraryLog.pdb
+C:\Visual .net\ClassLibraryLog\ClassLibraryLog\obj\Debug\ClassLibraryLog.csprojResolveAssemblyReference.cache
+C:\Visual .net\ClassLibraryLog\ClassLibraryLog\obj\Debug\ClassLibraryLog.dll
+C:\Visual .net\ClassLibraryLog\ClassLibraryLog\obj\Debug\ClassLibraryLog.pdb

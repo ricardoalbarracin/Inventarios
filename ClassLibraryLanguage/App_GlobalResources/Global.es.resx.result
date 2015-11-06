@@ -1,0 +1,780 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ss" xml:space="preserve">
+    <value>Sur quoi</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Gérez votre compte.</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Changer le mot de passe</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Ce champ est obligatoire</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Approuver</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Confirmer le nouveau mot de passe</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Console de configuration</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Contactez</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Mot de passe</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Mot de passe actuel.</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Mot de passe est requis.</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Formulaire pour modifier le mot de passe.</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Salut à tous</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Bonjour tout le monde.</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Langue.</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>IdPeriferico</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Connecté en tant que.</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Connectez-vous secion.</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Accueil.</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Nom d'utilisateur.</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Nouveau mot de passe.</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Mot de compte?</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>État</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>L'Utilisateur est tenu</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Utilisez un compte local pour vous connecter</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Actif</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Paramètres</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Serveur</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>De périphériques de type</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Zone</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Perifericos</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Configuration des périphériques d'ordinateurs</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>IP</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Littéral trouvé dans</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Appareils</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Mot de passe</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Caméra de configuration</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>IDCamara</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Modèle</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Configuration du port</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Flux Port</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Url</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Utilisateur</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Canal</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Configuration</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Serveurs</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>ConfigZonas</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>IdServidor</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Domaines</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Console pour moto</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Console Virtuelle</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>VIP seulement</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Vérifiez la plaque</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>IdConsola</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Périphérique</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Général</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Parking</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Messages</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>TipoDeAcceso</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Utilisateurs</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Nom de famille</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Rue</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Suppression</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Id Grupo</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Id message</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Type de Zone</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Poster</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Téléphone</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Quantité</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Rapport de voitures par jour</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Concessionnaires rapportent selon la date et de l'heure</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Console</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Rapport sur la durée de stationnement</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Rapport de Ocuapacion par date et heure</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Rapports</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Voitures</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Graphique</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Consoles</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Entrée</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Finale</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Initiale</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Mensuel</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Motos</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Gamme</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Rapport</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Sortie</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Table</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Type de l'utilisateur</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Type de véhicule</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Tous</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Tapez utilisateurs mensuels</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Les utilisateurs tapent normale</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Les utilisateurs tapent VIP</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>et</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Temps</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Durée</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Zone</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>État</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Dans le rapport État de carte par jour</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Rapports de stationnement</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Les rapports de facturation</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Base de Automatique</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Espèces</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Différence</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>J'ai vérifié</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>TVA</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Remarques:</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>PreCierres</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Produit</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Recharge</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Rapport journalier de contrôle</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Saldo Stack</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Stack</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Terminal</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Nombre de casiers efficaces:</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>TotalEfectivo parking:</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Total Sin IVA</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Tour</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Signalé La valeur</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Présentée De</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Jusqu'à</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>NIT</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Rapport journalier de facturation</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Convention</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Rapport facturation DIAN</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Rapport facturation DIAN pour la facturation</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Rapport facturation par région</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>IVA total</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Valeur facture</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Rapport conventions en vigueur</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Plaque</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Taux</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Carte</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Total des Convenios</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Nombre minutos</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Rapport De Conventions utilisées</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Taux d'ajustement</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Annulé</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Ouvrir Cajero</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Facture</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Manquant</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>FechaEntrada</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Fecha final</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Date initiale</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>FechaPago</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>FechaSalida</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Manuel</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Procès-verbal</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Monto final</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Montant initial</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Nombre Convenios</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Non billets</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>PERSPECTIVES</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Restes</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Cartes collectées</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Cartes Non recueilli</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Cartes transformés</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>TipoConvenio</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Total des Anuladas</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Total des Cortes</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Liquidités Total</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Total des Turno</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Night Shift</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Coquillages</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Valeur par défaut</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>FechaFactura</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Convention Minutes</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Procès-verbal de la facture</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Convention de pourcentage</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Convention valeur</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Rapports des transactions pour PayPoint</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Confitures</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Moyenne</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Billets trouvés</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>État Billet</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Durée de l'échec</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Rapporté par</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Un billet pas cher empiler les PPA</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Conventions en vigueur</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Facturation</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Liste des paiements Cortes et / ou échecs PPA</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Annonce des défauts al paient PPA</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Liste jour qui passe</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Liste pré fermetures PPA</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Liste des recharges PPA</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Inscrivez incident S'enregistrer PPA</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Parking VIP Consommation Rapport mensuel</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Rapport de la consommation par des personnalités de mois</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Rapport Défauts vs transactions PPP</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Rapport produit x vs Point de Paiement manquant</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Changements</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Téléspectateurs</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>TPS</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>TVQ</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Base</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value># Cartes de crédit</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Concept</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Mettez trésorerie</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>IVA total</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Préfixe</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Paiement</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Total des Factura</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Total de la taxe</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Total Sin Impuesstos</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Valor TC</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Accueil</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Système d'information Ultrapark</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Sujets</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value>Événements</value>
+  </data>
+  <data name="InicieSesion" xml:space="preserve">
+    <value>Entrez votre nom d'utilisateur et mot de passe.</value>
+  </data>
+</root>
