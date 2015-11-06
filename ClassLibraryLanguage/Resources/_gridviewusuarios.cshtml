@@ -1,0 +1,123 @@
+@{
+    var grid = Html.DevExpress().GridView(settings =>
+    {
+        ViewBag.nombre = Resourses.Global.Nombre;
+        ViewBag.clave = Resourses.Global.Clave;
+        ViewBag.telefono = Resourses.Global.Telefono;
+        ViewBag.direccion = Resourses.Global.Direccion;
+        ViewBag.usuario = Resourses.Global.Usuario;
+        ViewBag.activo = Resourses.Global.Activo;
+        ViewBag.eliminado = Resourses.Global.Eliminado;
+        ViewBag.apellido = Resourses.Global.Apellido;
+        ViewBag.idgroup = Resourses.Global.IdGroup;
+
+        settings.SettingsBehavior.ColumnResizeMode = ColumnResizeMode.NextColumn;
+        settings.Name = "_GridViewUsuarios";
+        settings.CallbackRouteValues = new { Controller = "Configuration", Action = "_GridViewUsuarios" };
+
+        settings.SettingsEditing.AddNewRowRouteValues = new { Controller = "Configuration", Action = "_GridViewUsuariosAddNew" };
+        settings.SettingsEditing.UpdateRowRouteValues = new { Controller = "Configuration", Action = "_GridViewUsuariosUpdate" };
+        settings.SettingsEditing.DeleteRowRouteValues = new { Controller = "Configuration", Action = "_GridViewUsuariosDelete" };
+        settings.SettingsEditing.Mode = GridViewEditingMode.EditFormAndDisplayRow;
+        settings.SettingsBehavior.ConfirmDelete = true;
+
+        settings.CommandColumn.Visible = true;
+        settings.CommandColumn.ShowNewButton = true;
+        settings.CommandColumn.ShowDeleteButton = true;
+        settings.CommandColumn.ShowEditButton = true;
+
+        settings.KeyFieldName = "Id";
+
+        settings.SettingsPager.Visible = true;
+        settings.Settings.ShowGroupPanel = true;
+        settings.Settings.ShowFilterRow = true;
+        settings.SettingsBehavior.AllowSelectByRowClick = true;
+
+        //settings.Columns.Add("IdGroup");
+
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "IdGroup";
+            column.Caption = ViewBag.idgroup;
+            /*column.ColumnType = MVCxGridViewColumnType.ComboBox;
+            var comboBoxProperties = column.PropertiesEdit as ComboBoxProperties;
+            comboBoxProperties.DataSource = UltraparkSI.Models.ClassGruposList.GetGrupo();
+            comboBoxProperties.TextField = "Descripcion";
+            comboBoxProperties.ValueField = "idTipoPeriferico";
+            comboBoxProperties.ValueType = typeof(int);*/
+        });
+        
+        //settings.Columns.Add("FirstName");
+
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "FirstName";
+            column.Caption = ViewBag.nombre;
+        });
+
+        //settings.Columns.Add("LastName");
+
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "LastName";
+            column.Caption = ViewBag.apellido;
+        });
+        
+        //settings.Columns.Add("phone");
+
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "phone";
+            column.Caption = ViewBag.telefono;
+        });
+
+        //settings.Columns.Add("Address");
+
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "Address";
+            column.Caption = ViewBag.direccion;
+        });
+
+        //settings.Columns.Add("Login");
+
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "Login";
+            column.Caption = ViewBag.usuario;
+
+        });
+
+        //settings.Columns.Add("password");
+
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "password";
+            column.Caption = ViewBag.clave;
+        });
+
+        //settings.Columns.Add("isActive");
+
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "isActive";
+            column.Caption = ViewBag.activo;
+            column.ColumnType = MVCxGridViewColumnType.CheckBox;
+        });
+
+        //settings.Columns.Add("isDelete");
+
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "isDelete";
+            column.Caption = ViewBag.eliminado;
+            column.ColumnType = MVCxGridViewColumnType.CheckBox;
+        });
+
+    });
+    if (ViewData["EditError"] != null)
+    {
+        grid.SetEditErrorText((string)ViewData["EditError"]);
+    }
+}
+@grid.Bind(Model).GetHtml()

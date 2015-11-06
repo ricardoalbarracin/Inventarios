@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Usuarios";
+}
+<div class="pageWrap">
+    <div class="pageContent extended">
+        <div class="container">
+            <h2>Usuarios</h2>
+            @using (Html.BeginForm())
+            {
+                @Html.Action("UsuariosGridView")
+            }
+        </div>
+    </div>
+</div>

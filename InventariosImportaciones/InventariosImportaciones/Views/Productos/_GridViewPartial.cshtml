@@ -1,0 +1,96 @@
+@{
+    var grid = Html.DevExpress().GridView(settings => {
+        settings.Name = "GridView";
+        settings.CallbackRouteValues = new { Controller = "Productos", Action = "GridViewPartial" };
+
+        settings.SettingsEditing.AddNewRowRouteValues = new { Controller = "Productos", Action = "GridViewPartialAddNew" };
+        settings.SettingsEditing.UpdateRowRouteValues = new { Controller = "Productos", Action = "GridViewPartialUpdate" };
+        settings.SettingsEditing.DeleteRowRouteValues = new { Controller = "Productos", Action = "GridViewPartialDelete" };
+        settings.SettingsEditing.Mode = GridViewEditingMode.EditFormAndDisplayRow;
+        settings.SettingsBehavior.ConfirmDelete = true;
+
+       
+
+        settings.Width = Unit.Percentage(100);
+        settings.ControlStyle.CssClass = "grid";
+
+        settings.Settings.VerticalScrollBarMode = ScrollBarMode.Visible;
+
+        settings.SettingsBehavior.AllowFocusedRow = true;
+        settings.SettingsPager.PageSize = 50;
+        settings.SettingsPager.NumericButtonCount = 6;
+        settings.SettingsPager.EnableAdaptivity = true;
+
+        settings.CommandColumn.Visible = true;
+      
+
+        settings.KeyFieldName = "Codigo";
+
+        settings.SettingsPager.Visible = true;
+        settings.Settings.ShowGroupPanel = true;
+        settings.Settings.ShowFilterRow = true;
+        settings.SettingsBehavior.AllowSelectByRowClick = true;
+
+        settings.Columns.Add("Codigo");
+        settings.Columns.Add("Nombre");
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "CostoUnitario";
+
+            column.ColumnType = MVCxGridViewColumnType.SpinEdit;
+            var prop = column.PropertiesEdit as SpinEditProperties;
+            prop.DisplayFormatString = "C2";
+        });
+        settings.Columns.Add("Cantidad");
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "CostoTotal";
+
+            column.ColumnType = MVCxGridViewColumnType.SpinEdit;
+            var prop = column.PropertiesEdit as SpinEditProperties;
+            prop.DisplayFormatString = "C2";
+        });
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "FechaCompra";
+
+            column.ColumnType = MVCxGridViewColumnType.DateEdit;
+            column.PropertiesEdit.DisplayFormatString = "yyyy/MM/dd";
+            column.SortOrder = DevExpress.Data.ColumnSortOrder.Descending;
+
+        });
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "PrecioVenta";
+
+            column.ColumnType = MVCxGridViewColumnType.SpinEdit;
+            var prop = column.PropertiesEdit as SpinEditProperties;
+            prop.DisplayFormatString = "C2";
+        });
+        settings.Columns.Add("Tipo");
+        settings.Columns.Add("SubTipo");
+
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "DirImagen";
+            c.EditFormSettings.Visible = DefaultBoolean.True;
+            c.Visible = false;
+        });
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "Imagen";
+            c.ColumnType = MVCxGridViewColumnType.BinaryImage;
+            var properties = (MVCxBinaryImageEditProperties)c.PropertiesEdit;
+            properties.ImageHeight = 100;
+            properties.ImageWidth = 90;
+            properties.ImageSizeMode = ImageSizeMode.FitProportional;
+            properties.CallbackRouteValues = new { Action = "BinaryImageColumnPhotoUpdate", Controller = "Productos" };
+            properties.EditingSettings.Enabled = true;
+            properties.EditingSettings.UploadSettings.UploadValidationSettings.MaxFileSize = 4194304;
+        });
+    });
+    if (ViewData["EditError"] != null){
+        grid.SetEditErrorText((string)ViewData["EditError"]);
+    }
+}
+@grid.Bind(Model).GetHtml()

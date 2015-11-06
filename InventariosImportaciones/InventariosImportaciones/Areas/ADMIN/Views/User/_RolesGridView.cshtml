@@ -1,0 +1,32 @@
+@{
+    var grid = Html.DevExpress().GridView(settings => {
+        settings.Name = "RolesGridView";
+        settings.CallbackRouteValues = new { Controller = "User", Action = "RolesGridView" };
+
+        settings.SettingsEditing.AddNewRowRouteValues = new { Controller = "User", Action = "RolesGridViewAddNew" };
+        settings.SettingsEditing.UpdateRowRouteValues = new { Controller = "User", Action = "RolesGridViewUpdate" };
+        settings.SettingsEditing.DeleteRowRouteValues = new { Controller = "User", Action = "RolesGridViewDelete" };
+        settings.SettingsEditing.Mode = GridViewEditingMode.EditFormAndDisplayRow;
+        settings.SettingsBehavior.ConfirmDelete = true;
+
+        settings.CommandColumn.Visible = true;
+        settings.CommandColumn.ShowNewButton = true;
+        settings.CommandColumn.ShowDeleteButton = true;
+        settings.CommandColumn.ShowEditButton = true;
+
+        settings.KeyFieldName = "Id";
+
+        settings.SettingsPager.Visible = true;
+        settings.Settings.ShowGroupPanel = true;
+        settings.Settings.ShowFilterRow = true;
+        settings.SettingsBehavior.AllowSelectByRowClick = true;
+
+        settings.Columns.Add("Id");
+        settings.Columns.Add("Name");
+        InventariosImportaciones.Areas.ADMIN.Controllers.UserController.ConfigurarGridView(settings, true, "ID_LocalizacionOUT", true, true, ViewData);
+    });
+    if (ViewData["EditError"] != null){
+        grid.SetEditErrorText((string)ViewData["EditError"]);
+    }
+}
+@grid.Bind(Model).GetHtml()

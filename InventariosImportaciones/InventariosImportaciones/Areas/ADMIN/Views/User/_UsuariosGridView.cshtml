@@ -1,0 +1,62 @@
+@using inventarioImportaciones.Models;
+
+
+@{
+    var grid = Html.DevExpress().GridView(settings => {
+        settings.Name = "UsuariosGridView";
+        settings.CallbackRouteValues = new { Controller = "User", Action = "UsuariosGridView" };
+
+        settings.SettingsEditing.AddNewRowRouteValues = new { Controller = "User", Action = "UsuariosGridViewAddNew" };
+        settings.SettingsEditing.UpdateRowRouteValues = new { Controller = "User", Action = "UsuariosGridViewUpdate" };
+        settings.SettingsEditing.DeleteRowRouteValues = new { Controller = "User", Action = "UsuariosGridViewDelete" };
+        settings.SettingsEditing.Mode = GridViewEditingMode.EditFormAndDisplayRow;
+        settings.SettingsBehavior.ConfirmDelete = true;
+
+        settings.CommandColumn.Visible = true;
+        settings.CommandColumn.ShowNewButton = true;
+        settings.CommandColumn.ShowDeleteButton = true;
+        settings.CommandColumn.ShowEditButton = true;
+
+        settings.KeyFieldName = "Id";
+
+        settings.SettingsPager.Visible = true;
+        settings.Settings.ShowGroupPanel = true;
+        settings.Settings.ShowFilterRow = true;
+        settings.SettingsBehavior.AllowSelectByRowClick = true;
+
+        
+
+        settings.CommandColumn.SetHeaderTemplateContent(c =>
+        {
+            Html.DevExpress().HyperLink(hyperLinkSettings =>
+            {
+                hyperLinkSettings.Name = "link_" + settings.Name;
+                hyperLinkSettings.Properties.Text = "New";
+                hyperLinkSettings.NavigateUrl = "javascript:void(0);";
+                hyperLinkSettings.Properties.ClientSideEvents.Click = string.Format(@"
+                function(s, e)
+                {{
+                    {0}.AddNewRow();
+                }}", settings.Name);
+            }).Render();
+        });
+
+        settings.Columns.Add("Id");
+        settings.Columns.Add("Email");
+        settings.Columns.Add("EmailConfirmed");
+        settings.Columns.Add("PasswordHash");
+        settings.Columns.Add("SecurityStamp");
+        settings.Columns.Add("PhoneNumber");
+        settings.Columns.Add("PhoneNumberConfirmed");
+        settings.Columns.Add("TwoFactorEnabled");
+
+        settings.Columns.Add("LockoutEnabled");
+        settings.Columns.Add("AccessFailedCount");
+        settings.Columns.Add("UserName");
+        InventariosImportaciones.Areas.ADMIN.Controllers.UserController.ConfigurarGridView(settings, true, "ID_LocalizacionOUT", true, true, ViewData);
+    });
+    if (ViewData["EditError"] != null){
+        grid.SetEditErrorText((string)ViewData["EditError"]);
+    }
+}
+@grid.Bind(Model).GetHtml()

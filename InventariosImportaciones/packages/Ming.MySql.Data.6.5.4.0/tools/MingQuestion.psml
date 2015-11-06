@@ -1,0 +1,16 @@
+$answer = "Hungry","No Hungry"
+
+function Get-Answer($question)
+{
+	$rand = New-Object System.Random
+	return $answer[$rand.Next(0,2)]
+}
+
+Register-TabExpansion 'Get-Answer' @{
+	'question' = {
+		"Hungry?",
+		"Are you hungry?"
+	}
+}
+
+Export-ModuleMember Get-Answer
